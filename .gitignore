@@ -1,23 +1,34 @@
-# Compiled class file
-*.class
+package addmul;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
+public class multi {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+        System.out.print("Input first number: ");
+        int num1 = in.nextInt();
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        System.out.print("Input second number: ");
+        int num2 = in.nextInt();
+
+        System.out.print("Input second number: ");
+        int num3 = in.nextInt();
+
+
+        System.out.println(num1 + " + " + num2 + " = " +
+                (num1 + num2));
+
+        System.out.println(num1 + " + " + num2 + " + " + num3 + " = " +
+                (num1 + num2 + num3));
+
+        System.out.println(num1 + " * " + num2 + " = " +
+                (num1 * num2));
+
+        System.out.println(num1 + " * " + num2 + " * " + num3 +  " = " +
+                (num1 * num2 * num3));
+
+    }
+
+}
